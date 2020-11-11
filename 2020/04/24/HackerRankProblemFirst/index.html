@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HackerRankProblemFirst, Hexo">
+    <meta name="keywords" content="HackerRankProblemFirst, Be Better">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>HackerRankProblemFirst | Hexo</title>
+    <title>HackerRankProblemFirst | Be Better</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,8 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 
 
@@ -43,7 +44,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Hexo</span>
+                    <span class="logo-span">Be Better</span>
                 </a>
             </div>
             
@@ -142,7 +143,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Hexo</div>
+        <div class="logo-name">Be Better</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -234,7 +235,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/a1779748" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -291,7 +292,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/a1779748" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -449,12 +450,32 @@
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
+                    2020-04-24
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
+                    726
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
+                    3 Min
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -464,47 +485,65 @@
 <h4 id="conditionals-and-loops-gt-printing-pattern-using-loops"><a href="#conditionals-and-loops-gt-printing-pattern-using-loops" class="headerlink" title="conditionals and loops-&gt;printing pattern using loops"></a>conditionals and loops-&gt;printing pattern using loops</h4><p>In this problem, you need to print the pattern of the following form containing the numbers from 1 to n.</p>
 <a id="more"></a>
 
-<pre><code>4 4 4 4 4 4 4  
-4 3 3 3 3 3 4   
-4 3 2 2 2 3 4   
-4 3 2 1 2 3 4   
-4 3 2 2 2 3 4   
-4 3 3 3 3 3 4   
-4 4 4 4 4 4 4   </code></pre><p><strong>Input Format</strong></p>
+<pre><code>                        4 4 4 4 4 4 4  
+                        4 3 3 3 3 3 4   
+                        4 3 2 2 2 3 4   
+                        4 3 2 1 2 3 4   
+                        4 3 2 2 2 3 4   
+                        4 3 3 3 3 3 4   
+                        4 4 4 4 4 4 4   </code></pre><p><strong>Input Format</strong></p>
 <p>The input will contain a single integer <em>n</em>.</p>
 <p><strong>Constraints</strong></p>
 <p>1 $\leq$ n $\leq$ 1000</p>
 <p><strong>Output Format</strong></p>
 <p>Print the pattern mentioned in the problem statement.</p>
 <p><strong>Sample Input 0</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
-
-<p><strong>Sample Output 0</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 2 2</span><br><span class="line">2 1 2</span><br><span class="line">2 2 2</span><br></pre></td></tr></table></figure>
-
-<p><strong>Sample Input 1</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
-
-<p><strong>Sample Output 1</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">5 5 5 5 5 5 5 5 5 </span><br><span class="line">5 4 4 4 4 4 4 4 5 </span><br><span class="line">5 4 3 3 3 3 3 4 5 </span><br><span class="line">5 4 3 2 2 2 3 4 5 </span><br><span class="line">5 4 3 2 1 2 3 4 5 </span><br><span class="line">5 4 3 2 2 2 3 4 5 </span><br><span class="line">5 4 3 3 3 3 3 4 5 </span><br><span class="line">5 4 4 4 4 4 4 4 5 </span><br><span class="line">5 5 5 5 5 5 5 5 5</span><br></pre></td></tr></table></figure>
-
-<p> 以上是原题目叙述</p>
+<pre><code>2</code></pre><p><strong>Sample Output 0</strong></p>
+<pre><code>2 2 2
+2 1 2
+2 2 2</code></pre><p><strong>Sample Input 1</strong></p>
+<pre><code>5</code></pre><p><strong>Sample Output 1</strong></p>
+<pre><code>5 5 5 5 5 5 5 5 5 
+5 4 4 4 4 4 4 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 2 1 2 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 4 4 4 4 4 4 5 
+5 5 5 5 5 5 5 5 5</code></pre><p> 以上是原题目叙述</p>
 <hr>
 <h4 id="汉化理解"><a href="#汉化理解" class="headerlink" title="汉化理解"></a>汉化理解</h4><p>题目要求输入一个数字n，输出对应的图形。样例在上边已给出，就不用解释了。</p>
 <hr>
 <h4 id="题目思路分析"><a href="#题目思路分析" class="headerlink" title="题目思路分析"></a>题目思路分析</h4><p>观察之后，发现对于每一圈相同的数字，它与最中间的数字1的’距离‘是相同的。</p>
 <p>举例如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">11 12 13 14 15 -&gt;	3 3 3 3 3</span><br><span class="line">21 22 23 24 25 -&gt;	3 2 2 2 3</span><br><span class="line">31 32 33 34 35 -&gt;	3 2 1 2 3</span><br><span class="line">41 42 43 44 45 -&gt;	3 2 2 2 3</span><br><span class="line">51 52 53 54 55 -&gt;	3 3 3 3 3</span><br></pre></td></tr></table></figure>
-
-<p>此时问题转化为如何计算这个‘<em>距离</em>’。</p>
+<pre><code> 11 12 13 14 15 -&gt;    3 3 3 3 3
+ 21 22 23 24 25 -&gt;    3 2 2 2 3
+ 31 32 33 34 35 -&gt;    3 2 1 2 3
+ 41 42 43 44 45 -&gt;    3 2 2 2 3
+ 51 52 53 54 55 -&gt;    3 3 3 3 3</code></pre><p>此时问题转化为如何计算这个‘<em>距离</em>’。</p>
 <p>人眼观察时，我们可以直接数，但是对于计算机这种算盘式的机器，并没有我们聪明，我们就需要将问题拆分。在’33‘这个位置左上方求这个距离时，因为所有左上的坐标数都小于‘33’，我们只需要用‘33’，分别减去寻找位置的行列，取其中较大值，即为距离。举个栗子：我们要找‘12’和‘33’的距离，那么行距为3-1=2，列距为3-2=1，此时行距2较大，所以‘12’和‘33’的距离为2。同理右上，行距不变，此时列距有所变化，我们需要用寻找位置的列减去‘33’位置的列。左下，右下也是相同的道理。</p>
 <p>求出’距离‘后。</p>
 <p>我们需要将其打印，距离为0时，需打印1，距离为1时需打印2，以此类推，距离为n时，需打印n+1。</p>
 <hr>
-<h4 id="解题代码"><a href="#解题代码" class="headerlink" title="解题代码"></a>解题代码</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,len,i,j,disr,disc,dis;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">    len = n*<span class="number">2</span> - <span class="number">1</span>; <span class="comment">// 计算行列最大长度</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (i=<span class="number">1</span>;i&lt;=len;i++)&#123;</span><br><span class="line">        <span class="keyword">for</span> (j=<span class="number">1</span>;j&lt;=len;j++)&#123;</span><br><span class="line">            disr = i&lt;n ? n-i : i-n; <span class="comment">// 计算行距</span></span><br><span class="line">            disc = j&lt;n ? n-j : j-n; <span class="comment">// 计算列距</span></span><br><span class="line">            dis = disr&gt;disc ? disr : disc; <span class="comment">// 二者中较大的为距离</span></span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d "</span>,dis+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="解题代码"><a href="#解题代码" class="headerlink" title="解题代码"></a>解题代码</h4><pre class="line-numbers language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n<span class="token punctuation">,</span>len<span class="token punctuation">,</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span>disr<span class="token punctuation">,</span>disc<span class="token punctuation">,</span>dis<span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    len <span class="token operator">=</span> n<span class="token operator">*</span><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 计算行列最大长度</span>
 
+    <span class="token keyword">for</span> <span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>len<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span>j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>len<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            disr <span class="token operator">=</span> i<span class="token operator">&lt;</span>n <span class="token operator">?</span> n<span class="token operator">-</span>i <span class="token punctuation">:</span> i<span class="token operator">-</span>n<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 计算行距</span>
+            disc <span class="token operator">=</span> j<span class="token operator">&lt;</span>n <span class="token operator">?</span> n<span class="token operator">-</span>j <span class="token punctuation">:</span> j<span class="token operator">-</span>n<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 计算列距</span>
+            dis <span class="token operator">=</span> disr<span class="token operator">></span>disc <span class="token operator">?</span> disr <span class="token punctuation">:</span> disc<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 二者中较大的为距离</span>
+            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d "</span><span class="token punctuation">,</span>dis<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
 
-
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p><strong>注释：</strong></p>
 <p><code>condition ？true ：false</code></p>
@@ -525,7 +564,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">V_D_V</a>
+                    <a href="/about" rel="external nofollow noreferrer">Dong</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -535,7 +574,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/04/24/HackerRankProblemFirst/">http://yoursite.com/2020/04/24/HackerRankProblemFirst/</a>
+                    <a href="http://a1779748.github.io/2020/04/24/HackerRankProblemFirst/">http://a1779748.github.io/2020/04/24/HackerRankProblemFirst/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,7 +587,7 @@
                     All articles in this blog are used except for special statements
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     reprint polocy. If reproduced, please indicate source
-                    <a href="/about" target="_blank">V_D_V</a>
+                    <a href="/about" target="_blank">Dong</a>
                     !
                 </span>
             </div>
@@ -692,7 +731,7 @@
     <div id="rewardModal" class="modal">
         <div class="modal-content">
             <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <h4 class="reward-title">感谢金主爸爸</h4>
             <div class="reward-content">
                 <div class="reward-tabs">
                     <ul class="tabs row">
@@ -766,7 +805,7 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            V_D_V
+                            Dong
                             
                         </span>
                     </div>
@@ -803,7 +842,7 @@
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            V_D_V
+                            Dong
                             
                         </span>
                     </div>
@@ -1008,10 +1047,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
                 <span id="year">2019-2020</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">V_D_V</a>
+            <a href="/about" target="_blank">Dong</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">2.2k</span>&nbsp;字
             
             
             
@@ -1035,13 +1077,13 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/a1779748" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:wwmogu@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1051,7 +1093,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=626382738" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 626382738" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -1060,10 +1102,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>
